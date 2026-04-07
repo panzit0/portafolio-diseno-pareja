@@ -1,1 +1,44 @@
-
+/* Encabezado con degradado */
+header {
+ background: linear-gradient(135deg, var(--azul-inem), var(--rojo-inem));
+ color: var(--blanco);
+ padding: 3rem 1rem;
+ text-align: center;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+header h1 {
+ margin: 0;
+ font-size: 2.5rem;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+}
+/* Estilo de la Foto de Perfil */
+img {
+ display: block;
+ margin: 20px auto;
+ width: 180px;
+ height: 180px;
+ object-fit: cover;
+ border-radius: 50%; /* Foto Circular */
+ border: 5px solid var(--blanco);
+ box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+ transition: transform 0.3s ease;
+}
+img:hover {
+ transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+/* Contenedor principal */
+main {
+ max-width: 800px;
+ margin: -30px auto 40px auto; /* Sube un poco para entrar en el header */
+ background: var(--blanco);
+ padding: 40px;
+ border-radius: 15px;
+ box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+h2 {
+ color: var(--azul-inem);
+ border-bottom: 2px solid var(--rojo-inem);
+ padding-bottom: 5px;
+ display: inline-block;
+}
